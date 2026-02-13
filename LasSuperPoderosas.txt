@@ -1,25 +1,8 @@
 priemer cambio
 Frase Daniel: La lámpara de Aladín
-=======
-<<<<<<< HEAD
 priemer cambio
-
 neythan_andres_ayala_mosquera  "my little pony"
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
 Julian David Vasquez Fernande_lampara de aladin
-=======
-=======
->>>>>>> a35bfc46b7a6b97fae6f09cd3b53b9a9554f839f
 priemer cambio 
 My little pony
->>>>>>> 3661ccb064e461e75321f9b8db66fcfb0e04576a
 Bhritny: Lampara de Aladin
->>>>>>> 0323c27d0375c73de4e3f82f35e21d0d05624a50
