@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Autenticación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4e73df;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e59d9;
+        }
+
+        .mensaje {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Iniciar Sesión</h2>
+
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="password" id="contrasena" placeholder="Contraseña">
+
+    <button onclick="autenticar()">Ingresar</button>
+
+    <div class="mensaje" id="mensaje"></div>
+</div>
+
+<script>
+    // Usuarios simulados (base de datos ficticia)
+    const usuarios = {
+        "admin": "1234",
+        "neithan": "abcd"
+    };
+
+    function autenticar() {
+        const usuario = document.getElementById("usuario").value;
+        const contrasena = document.getElementById("contrasena").value;
+        const mensaje = document.getElementById("mensaje");
+
+        if (usuarios[usuario]) {
+            if (usuarios[usuario] === contrasena) {
+                mensaje.style.color = "green";
+                mensaje.textContent = "✅ Acceso concedido. Bienvenido " + usuario;
+            } else {
+                mensaje.style.color = "red";
+                mensaje.textContent = "❌ Contraseña incorrecta.";
+            }
+        } else {
+            mensaje.style.color = "red";
+            mensaje.textContent = "❌ El usuario no existe.";
+        }
+    }
+</script>
+
+</body>
+</html>
