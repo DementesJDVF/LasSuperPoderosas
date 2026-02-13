@@ -1,10 +1,7 @@
 priemer cambio
-<<<<<<< HEAD
 priemer cambio 
-=======
 Frase Daniel: La lámpara de Aladín
 neythan_andres_ayala_mosquera  "my little pony"
->>>>>>> 8c48042d02b199598bcf0e24a5e9b1f6490ac0d6
 My little pony
 Julian David Vasquez Fernande_lampara de aladin
 My little pony
